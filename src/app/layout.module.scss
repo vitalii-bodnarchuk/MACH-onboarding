@@ -1,0 +1,13 @@
+.appWrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+  width: 100%;
+  min-height: 100vh;
+}
+
+@media (max-width: 768px) {
+  .appWrapper {
+    padding: 1rem;
+  }
+}
