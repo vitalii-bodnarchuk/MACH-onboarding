@@ -1,9 +1,9 @@
-import ArticlesList from "@/components/articleList/articleList";
 import {
   GET_ARTICLES_QUERY,
   fetchContentfulGraphQL,
 } from "@/services/contentful.service";
 import styles from "./article.module.scss";
+import ArticlesList from "@/components/articleLists/articleList";
 
 export default async function ArticlesPage() {
   const data = await fetchContentfulGraphQL(GET_ARTICLES_QUERY, {
