@@ -111,7 +111,6 @@ export const GET_ARTICLES_QUERY = `
         slug
         excerpt
         publishedDate
-        featured
         tags
         featuredMedia {
           url
