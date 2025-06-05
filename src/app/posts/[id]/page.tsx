@@ -27,11 +27,11 @@ const PostDetailPage = async ({ params }: PostPageProps) => {
 
   return (
     <main className={styles.wrapper}>
-      <h1 className={styles.postTitle}>{post.title}</h1>
-      <p className={styles.postBody}>{post.body}</p>
       <Link href="/posts" className="button">
         Back to posts
       </Link>
+      <h1 className={styles.postTitle}>{post.title}</h1>
+      <p className={styles.postBody}>{post.body}</p>
     </main>
   );
 };

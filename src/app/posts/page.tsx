@@ -1,4 +1,4 @@
-import PostList from "@/components/postList/PostList";
+import { PostList } from "@/components/postList/PostList";
 import styles from "./postPage.module.scss";
 
 const PostPage = () => {

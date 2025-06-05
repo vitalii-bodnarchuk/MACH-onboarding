@@ -1,14 +1,14 @@
 .wrapper {
   margin: 0 auto;
-}
 
-.postTitle {
-  font-size: 1.75rem;
-  font-weight: 700;
-}
+  .postTitle {
+    font-weight: 600;
+    margin-top: 15px;
+  }
 
-.postBody {
-  color: var(--foreground-muted);
-  white-space: pre-line;
-  padding-bottom: 1rem;
+  .postBody {
+    color: var(--foreground-muted);
+    white-space: pre-line;
+    padding-bottom: 1rem;
+  }
 }

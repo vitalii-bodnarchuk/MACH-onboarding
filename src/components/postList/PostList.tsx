@@ -11,7 +11,7 @@ const PostList = () => {
     <div className={styles.postsWrapper}>
       {posts.map((post) => (
         <article key={post.id} className={styles.postCard}>
-          <h2 className={styles.postTitle}>{post.title}</h2>
+          <h1 className={styles.postTitle}>{post.title}</h1>
           <p className={styles.postExcerpt}>{post.body.slice(0, 100)}...</p>
           <Link href={`/posts/${post.id}`} className={styles.readMore}>
             Read more
@@ -33,4 +33,4 @@ const PostList = () => {
   );
 };
 
-export default PostList;
+export { PostList };

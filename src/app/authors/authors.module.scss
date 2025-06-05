@@ -1,0 +1,133 @@
+.authorWrapper {
+  text-align: center;
+
+  .authorAvatar {
+    display: flex;
+    justify-content: center;
+
+    .authorAvatarImage {
+      border-radius: 50%;
+      margin-bottom: 1rem;
+    }
+  }
+
+  .jobTitle {
+    color: #666;
+  }
+
+  .backLink {
+    padding-bottom: 10px;
+    display: block;
+  }
+}
+
+.bio {
+  margin-left: 15px;
+  padding-bottom: 1rem;
+}
+
+.socialWrapper {
+  border-top: 1px solid #ddd;
+  padding-top: 1rem;
+
+  .socialLinks {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+}
+
+.authorsGrid {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(288px, 1fr));
+
+  .authorImage {
+    object-fit: cover;
+  }
+
+  .viewProfileButton {
+    margin-top: 5px;
+    display: inline-block;
+  }
+
+  .authorsTitle {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+
+  .authorAvatar {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+
+  .authorInfo {
+    .jobTitle {
+      color: #666;
+      margin-bottom: 1rem;
+    }
+
+    .authorName {
+      font-size: 1.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .bio {
+      margin-left: 15px;
+    }
+  }
+}
+
+.backButton {
+  display: inline-block;
+  margin-bottom: 10px;
+  color: #0070f3;
+  text-decoration: none;
+  position: relative;
+  transition: color 0.3s ease;
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 0;
+    height: 2px;
+    background-color: #0070f3;
+    transition: width 0.3s ease;
+  }
+
+  &:hover {
+    color: #0056c1;
+
+    &::after {
+      width: 100%;
+    }
+  }
+}
+
+.articlesList {
+  list-style: none;
+  .listItem {
+    margin-bottom: 1rem;
+    background: #fff;
+    border-radius: 8px;
+    padding: 1.5rem;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  }
+
+  .articleTitle {
+    font-weight: bold;
+    cursor: pointer;
+    color: blue;
+    text-decoration: underline;
+    margin-bottom: 10px;
+    display: inline-block;
+  }
+}
+
+.title {
+  margin: 5px 0px;
+  font-weight: 600;
+}
